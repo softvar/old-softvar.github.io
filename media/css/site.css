@@ -75,22 +75,14 @@ a:hover{
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: 'GeogrotesqueUltraLight',Arial,Helvetica,sans-serif;
-    
-    background-color: #F5F5F5;
-    background-color: #666666;background: #3d3d3d;
-     background: #272822;background: #232F4E;background: #3F5673;
-     background: #2B2B2B;background: #fff;background: #F3F5F7;background: #fff;
+    background: #fff;
     padding: 0;
     margin: 0;
     text-shadow: 0px 2px 0px #efefef;
 }
 
 #container{
-         background-color: #f3f3f3;
-         background-color: #E0E7FF;
-         background-color: #FFFFFF;background: #e3f4f7;
-         background: #D5E9ED;background: #695B8E;background: #ECF8FF;
-         width: 65%;background: #D5E9ED;background: #fff;
+         background: #fff;
          
          margin: 0 auto;
          padding: 12px;
@@ -115,7 +107,8 @@ footer{position:relative;
     text-align: center;
     /*margin-top: 24px;*/
     text-shadow: 0px 2px 0px #fff;
-    height: 10%;background: #333333;background: #191818;background: #fff;
+    height: 10%;
+    background: #fff;
     width: 70%;
     margin: 0 auto;
   
@@ -195,8 +188,7 @@ footer{position:relative;
     -moz-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border-radius: 5px;
-    background: #fff;
+   
     background: #000000;
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
     background: -moz-linear-gradient(top,  #fff,  #ededed);
@@ -243,16 +235,8 @@ footer{position:relative;
     position: relative;
     margin:0 auto;
     height: 35px;
-    background: #39383A;
-    background: #113A63;
-    background: #3D3D3D;
-    background: #3D3D3D;background: #232F4E;background: #3d3d3d;
-    background: #3F5673;
-    background: #1A1A1A;background: #006582;background: #5252AF;
-    width:98.4%;background: #39628E;background: #fff;
-    
+    background: #fff;
     padding: 12px;
-    
     
 }
 * { text-shadow: none !important; }
@@ -264,8 +248,7 @@ footer{position:relative;
     margin-left: 41%;/14%;
     
     font-family: 'Arial',Arial,Helvetica,sans-serif;
-    color: #33B773;
-    color:#68D9DF;color:#000;
+    color:#000;
 
 }
 
@@ -308,12 +291,7 @@ footer{position:relative;
     color: #000;
 }
 .banner nav li a.button.active{
-    color: #338DE8;
-    color: #53BC79;
-    
-    color:#9FC2FC;
-    color: #7F8082;
-    color: #f92672;color: #33B773;color: #6B9BCE;color: #33B773;
+    color: #33B773;
     /*border-bottom: solid 2px #4DB5F2;*/
     /*border: solid 1px #333;
     background: #333;
@@ -418,7 +396,6 @@ section.content{
     border-bottom: 1px solid #aaaaaa;border-bottom: 2px solid #424242;
     padding-bottom: 4px;
     font-size: 14px;
-    color: #484848;
     color: #747C78;
 }
 
@@ -434,7 +411,6 @@ section.content{
     margin-right: 50px;
     padding-bottom: 4px;
     font-size: 18px;
-    color: #484848;
     color: #747C78;
     letter-spacing:0px;
     border-bottom: 2px solid #EEEEEE;
@@ -450,12 +426,12 @@ section.content{
 .listing_blog a{
    
     margin-right: 100px;
-    color: #3B5B9B;color: #333332;
+    color: #333332;
     text-decoration: none !important;
     
 }
 .listing_blog a:hover{
-    color:#3188D8;color: #33B773;
+    color: #33B773;
 }
 
 .listing_blog li{
@@ -507,8 +483,7 @@ article.post p{
     font-family: 'Lato', sans-serif;font-family: 'Bitter', serif;
     line-height: 37px;
     margin: 6px 0;
-    color:  #959595;
-    color: #3A3A3A;color: #F0EAFF;color: #3A3A3A;color: #636363;color: #333333;
+    color: #333333;
 }
 article.post h6{
     font-size: 29px;
@@ -583,11 +558,11 @@ h1.owner a{
     margin-top: 0px;
     
     font-family: 'Arial',Arial,Helvetica,sans-serif;
-    color: #ECEAFF;color: #212121;
+    color: #212121;
     
 }
 h1.owner a:hover {
-    color: #E2E2E2;color: #2E3944;color: #33B773;
+    color: #33B773;
     text-decoration: none;
 }
 h2 {
@@ -609,7 +584,7 @@ h3 a:hover{
     text-decoration: none;
 }
 nav.post_nav{
-    background-color: #efefef;background: #F8F8F8;
+    background: #F8F8F8;
     position: fixed;
     width: 124px;
     margin-left: -186px;
