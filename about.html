@@ -7,7 +7,9 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="">
-
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="">
@@ -22,9 +24,9 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>About BASIC</title>
-  <meta name="description" content="The default hyde template">
-  <meta name="author" content="Lakshmi Vyasarajan">
+  <title>LAB - about.me</title>
+  <meta name="description" content="It's about me">
+  <meta name="author" content="Varun Malhotra">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="">
@@ -32,21 +34,26 @@
     <!-- Place favicon.ico & apple-touch-icon.png
         in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
   
-    <link rel="stylesheet" href="/media/css/site.css">
+  
+  <link rel="stylesheet" href="/media/css/site.css">
   <link rel="stylesheet" href="/media/css/syntax.css">
+  <link rel="stylesheet" href="/media/css/base.css">
+  <link rel="stylesheet" href="/media/css/style.css">
+  
   
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+    <script src="/media/js/libs/jquery.scrollUp.min.js"></script>
+    <script src="/media/js/libs/jquery.classysocial.js"></script>
+    
     </head>
 <body id="about">
-    <div id="container">
-            <div id="main" role="main">
-          <header class="banner clearfix">
-          <h1>BASIC</h1>
-            <h3>A hyde website</h3>                              <nav class=main_nav>
+    <header class="banner clearfix">
+          <h1 class="owner"><a href="index.html">Varun Malhotra</a></h1>                              <nav class=main_nav>
     <ul>
                 <li>
             <a title="Home Page"
@@ -55,16 +62,16 @@
                 Home
             </a>
         </li>        <li>
-            <a title="Portfolio"
-                class="button white portfolio"
-                href="/portfolio">
-                Portfolio
-            </a>
-        </li>        <li>
-            <a title="Blog"
+            <a title="Archive"
                 class="button white blog"
                 href="/blog">
-                Blog
+                Archive
+            </a>
+        </li>        <li>
+            <a title="Projects"
+                class="button white portfolio"
+                href="/portfolio">
+                Projects
             </a>
         </li>        <li>
             <a title="About"
@@ -75,18 +82,44 @@
         </li>    </ul>
 </nav>
                     </header>
+  <div id="container" >
+            <div id="main" role="main">
+          
           <section class="content">
-           
+          "Tell me and I'll forget; show me and I may remember; involve me and I'll understand."
+
+
+This site is still in it's alpha stage.
+
           </section>
       </div>
-      </div> <!--! end of #container -->
+ 
+   
+
+    </div> <!--! end of #container -->
+ 
+ 
+
   <footer>
-      Powered by <a href="http://ringce.com/hyde">hyde</a>.
+     
+      Powered by <span class="footer_link" ><a href="http://ringce.com/hyde">hyde</a></span>
+      
+      
   </footer>
-      <!-- Javascript at the bottom for fast page loading -->
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+
+    
+    <script src="/media/js/libs/jquery.github.js"></script>
+    <script type="text/javascript">
+   
+    $(".classysocial").each(function() {
+    	new ClassySocial(this);
+    });
+    </script>
+
+  <!-- Javascript at the bottom for fast page loading -->
+    
+
   
     
 
