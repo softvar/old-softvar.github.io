@@ -82,6 +82,7 @@ body{
 }
 
 #container{
+	 width: 65%;
          background: #fff;
          
          margin: 0 auto;
