@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2013-09-01T02:04:09Z</updated>
+    <updated>2013-09-03T16:15:06Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
@@ -46,30 +46,6 @@
             <content type="html">
                 
                 &lt;p&gt;Yay! this is my second approved &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) App- &lt;strong&gt;GistHub&lt;/strong&gt;. It&amp;#8217;s free to download from &lt;a href=&#34;https://marketplace.firefox.com/app/gisthub/&#34;&gt;Firefox marketplace&lt;/a&gt; for firefox smartphones&amp;nbsp;:)&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
-            <author><name>Varun Malhotra</name></author>
-            <link href="/blog/fos-csp.html"/>
-            <updated>2013-07-01T00:00:00Z</updated>
-            <published>2013-07-01T00:00:00Z</published>
-            <id>/blog/fos-csp.html</id>
-                        <category   scheme="/blog/tags"
-                        term="HTML5"
-                        label="Html5" />
-                        <category   scheme="/blog/tags"
-                        term="CSS3"
-                        label="Css3" />
-                        <category   scheme="/blog/tags"
-                        term="JavaScript"
-                        label="Javascript" />
-                        <category   scheme="/blog/tags"
-                        term="CSP"
-                        label="Csp" />
-            
-            <content type="html">
-                
-                &lt;p&gt;I&amp;#8217;m a die-hard fan of Mozilla Firefox. I always wanted to contribute to Mozilla in one or the other ways. This year only, it happened that I started getting involved in Open Source projects. Good Luck that I was familiar with &lt;strong&gt;Git&lt;/strong&gt; as I used it merely for the purpose of storing my college projects :). Mozilla&amp;#8217;s Open Source projects inspired me to contribute this time. Meanwhile, I heard the news of &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;, yeah, &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) is a Linux-based open source operating system for smartphones and tablet computers being developed by&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;MOZILLA&lt;/span&gt;.&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
