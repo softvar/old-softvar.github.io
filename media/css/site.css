@@ -740,6 +740,7 @@ a.backlink:hover, a.prev:hover, a.next:hover{
   line-height: 18px;
   margin-bottom: 8px;
   font-style: Verdana;
+  word-wrap: break-word;
   
 }
 
