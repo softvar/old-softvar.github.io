@@ -717,6 +717,14 @@ a.backlink:hover, a.prev:hover, a.next:hover{
 .about_me h2 {
     color: #33B773;
 }
+
+#follow {
+    text-align: center;
+    color: #313131;
+    margin-left: 46.5%;
+    font-weight: bold;
+
+}
 .codebox {
   margin-top: 8px;
   margin-bottom: 12px;
