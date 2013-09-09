@@ -546,7 +546,7 @@ ul.tags li a:hover{
 
 h1 a, h2 a, h3 a{
     text-decoration: none;
-    color: #3B5B9B;
+    color: #3B5B9B; 
     font-size: 25px;
     font-weight: 600;
     
@@ -704,6 +704,19 @@ a.backlink:hover, a.prev:hover, a.next:hover{
     margin-top: 35px;
 }
 
+.about_me {
+    padding: 2px;
+    font-size: 18px;
+
+}
+
+.about_me h1 {
+    padding-top: 20px;
+    color: #33B773;
+}
+.about_me h2 {
+    color: #33B773;
+}
 .codebox {
   margin-top: 8px;
   margin-bottom: 12px;
