@@ -546,7 +546,7 @@ ul.tags li a:hover{
 
 h1 a, h2 a, h3 a{
     text-decoration: none;
-    color: #3B5B9B; 
+    color: #3B5B9B; color: #515151;
     font-size: 25px;
     font-weight: 600;
     
@@ -565,11 +565,11 @@ h1.owner a{
     margin-top: 0px;
     
     font-family: 'Arial',Arial,Helvetica,sans-serif;
-    color: #ECEAFF;color: #212121;
+    color: #ECEAFF;color: #33B773;
     
 }
 h1.owner a:hover {
-    color: #33B773;
+    color: #212121;
     text-decoration: none;
 }
 h2 {
