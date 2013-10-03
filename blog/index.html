@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="/media/css/simple-sidebar.css">
   <link rel="stylesheet" href="/media/css/syntax.css">
   <link rel="stylesheet" href="/media/css/jquery.classysocial.css" />
+  <link rel="stylesheet" href="/media/font-awesome/css/font-awesome.min.css" />
+  
   
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
@@ -53,21 +55,20 @@
     
     </head>
 <body id="index">
-    <header class="banner clearfix">
+    
           <h1 class="owner"><a href="/">Varun Malhotra</a></h1>
+
               <div id="nav-main">
 
             <ul class="nav nav-pills">
 
               <li><a href="/about.html">About</a></li>
-              <li><a class="active" href="#">Archive</a></li>
+              <li><a class="active" href="/blog">Archive</a></li>
               <li><a href="/portfolio">Projects</a></li>
               <li><a href="#">Walk-through</a></li>
             </ul>
             
             </div>
-            
-          </header>
   <div id="container" >
             <div id="main" role="main">
           
@@ -115,6 +116,9 @@
           </section>
       </div>
  
+  <div class="browse_all">
+ <a href="/blog">Browse All posts </a> 
+</div>
    
 
     </div> <!--! end of #container -->
@@ -122,16 +126,25 @@
  
 
   <footer>
-     
+      
+      <div id="social-media-cons">
+            <a href="#" target="_blank"><i class="icon-linkedin icon-2x " title="LinkedIn" ></i></a>
+
+            <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="icon-twitter icon-2x " title="Twitter" ></i></a>
+
+            <a href="http://stackoverflow.com/users/2494535/varun-malhotra" target="_blank"><i class="icon-stackexchange icon-2x " title= "Stackoverflow"></i></a>
+            
+            <a href="http://github.com/softvar" target="_blank"><i class="icon-github icon-2x " title="Github"></i></a>
+
+      </div>
+      <br /><br />
       Powered by <span class="footer_link" ><a href="http://ringce.com/hyde">hyde</a></span>
       
       
   </footer>
   
 
-    
-    <script src="/media/js/libs/jquery.github.js"></script>
-    <script type="text/javascript">
+        <script type="text/javascript">
    
     $(".classysocial").each(function() {
     	new ClassySocial(this);
