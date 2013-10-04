@@ -7,17 +7,17 @@
         <link href="/"/>
     
         
-    <updated>2013-10-04T17:50:11Z</updated>
+    <updated>2013-10-05T01:43:07Z</updated>
 
     <id>/blog/atom.xml/</id>
 
             <entry>
             <title type="html">FIREFOX-OS App-2 (GistHub)</title>
             <author><name>Varun Malhotra</name></author>
-            <link href="/blog/fOS-GistHub.html"/>
+            <link href="/blog/2013/07/fOS-GistHub.html"/>
             <updated>2013-07-12T00:00:00Z</updated>
             <published>2013-07-12T00:00:00Z</published>
-            <id>/blog/fOS-GistHub.html</id>
+            <id>/blog/2013/07/fOS-GistHub.html</id>
                         <category   scheme="/blog/tags"
                         term="HTML5"
                         label="Html5" />
@@ -49,10 +49,10 @@
             <entry>
             <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
             <author><name>Varun Malhotra</name></author>
-            <link href="/blog/Intro_to_fos%26csp.html"/>
+            <link href="/blog/2013/07/fOS-intro.html"/>
             <updated>2013-07-01T00:00:00Z</updated>
             <published>2013-07-01T00:00:00Z</published>
-            <id>/blog/Intro_to_fos%26csp.html</id>
+            <id>/blog/2013/07/fOS-intro.html</id>
                         <category   scheme="/blog/tags"
                         term="HTML5"
                         label="Html5" />
@@ -101,10 +101,10 @@
             <entry>
             <title type="html">Getting Started with Hyde</title>
             <author><name>Varun Malhotra</name></author>
-            <link href="/blog/Getting_started_with_hyde.html"/>
+            <link href="/blog/2013/06/hyde.html"/>
             <updated>2013-06-04T20:00:00Z</updated>
             <published>2013-06-04T20:00:00Z</published>
-            <id>/blog/Getting_started_with_hyde.html</id>
+            <id>/blog/2013/06/hyde.html</id>
                         <category   scheme="/blog/tags"
                         term="python"
                         label="Python" />
