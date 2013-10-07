@@ -41,7 +41,8 @@
   <link rel="stylesheet" href="/media/css/simple-sidebar.css">
   <link rel="stylesheet" href="/media/css/syntax.css">
   <link rel="stylesheet" href="/media/css/jquery.classysocial.css" />
-  
+  <link rel="stylesheet" href="/media/font-awesome/css/font-awesome.min.css" />
+
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
@@ -63,7 +64,7 @@
             <ul class="nav nav-pills">
 
               <li><a href="/about.html">About</a></li>
-              <li><a class="active" href="#">Archive</a></li>
+              <li><a class="active" href="/blog">Archive</a></li>
               <li><a href="/portfolio">Projects</a></li>
               <li><a href="#">Walk-through</a></li>
             </ul>
@@ -141,10 +142,10 @@
     </a>
 </li>
 </ul>
-<p>A will for creating a personal website/blog, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&#8217;m glad to discuss my experience with a new open-source technology, smelting this site, <a href="www.hyde.com"><span class="caps">HYDE</span></a>. <span class="caps">HYDE</span>&#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no digg-effect.
+<p>A will for creating a personal portfolio cum blog site, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&#8217;m glad to discuss my experience with a new open-source technology, smelting this site, <a href="www.hyde.com"><span class="caps">HYDE</span></a>. <span class="caps">HYDE</span>&#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no digg-effect.
 Why&nbsp;<span class="caps">HYDE</span></p>
 <hr />
-<p>It saves a lot of considerable amount of time rather writing from the scratch. It&#8217;s built-in features and plug-ins inspired me to peep inside it. After satisfying the requirements for the <span class="caps">HYDE</span> environment to be set up, it&#8217;s hardly a matter of few seconds to have a full-structured working site on your local web server. You&#8217;ll greatly appreciate when you read about integrating your work with Fabric below, that even these few seconds can be reduced to merely a second, Yep! just single command to have full blog/website. Yay&nbsp;:) </p>
+<p>It saves a lot of considerable amount of time rather writing from the scratch. It&#8217;s built-in features and plug-ins inspired me to work with it. After satisfying the requirements for the <span class="caps">HYDE</span> environment to be set up, it&#8217;s hardly a matter of few seconds to have a full-structured working site on your local web server. You&#8217;ll greatly appreciate the amount of time spent in serving up when you&#8217;ll read about integrating your work with Fabric below, that even these few seconds can be reduced to merely a second, Yep! just a single command to have your website cum blog serving up. Isn&#8217;t it interesting? Yeah, Carry&nbsp;on! </p>
 <h2>Installation and&nbsp;Setup</h2>
 <h3>using python-pip for&nbsp;installing</h3>
 <div class="codebox"><figure class="code"><div class="highlight"><pre>pip install hyde<br /></pre></div><br /><figcaption>Bash</figcaption></figure></div>
@@ -178,10 +179,10 @@ Why&nbsp;<span class="caps">HYDE</span></p>
 <p><span class="caps">HYDE</span> builds in a processor that allows you to author web pages in Markdown rather than <span class="caps">HTML</span>. Markdown is a lightweight markup language, which helps in avoiding hand-authoring <span class="caps">HTML</span>, and edit just plain text using special characters to indicate the various <span class="caps">HTML</span> markup constructs, and finally converts that plain text formatting to&nbsp;<span class="caps">HTML</span>.</p>
 <p>Since this was my first experience creating website, i found Markdown simply awsesome to learn and use. It reduces my lots of <span class="caps">HTML</span>-coding efforts and helps me writing my blog-posts similar to the way i usually wrote an essay in school&nbsp;:)</p>
 <p>I won&#8217;t be undertaking an introduction to <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, but can provide a simple example to grab on&nbsp;it.</p>
-<div class="codebox"><figure class="code"><div class="highlight"><pre>Intro<br />=====<br />Section 1<br />---------<br />The **dream** is not *what yo see in sleep*,<br />&nbsp;<br />**dream** is the thing which does not __let you sleep__.<br />&nbsp;<br />--[Anonymous](#)<br />&nbsp;<br />##Three simple steps to succeed<br />1. Knowledge<br />2. Will<br />3. The Means<br /></pre></div><br /><figcaption>Text only</figcaption></figure></div>
+<div class="codebox"><figure class="code"><div class="highlight"><pre>Intro<br />=====<br />Section 1<br />---------<br />The **dream** is not *what you see in sleep*,<br />&nbsp;<br />**dream** is the thing which does not __let you sleep__.<br />&nbsp;<br />--[Anonymous](#)<br />&nbsp;<br />##Three simple steps to succeed<br />1. Knowledge<br />2. Determination<br />3. The Means<br /></pre></div><br /><figcaption>Text only</figcaption></figure></div>
 
 <p>will be converted to&nbsp;:</p>
-<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Intro<span class="nt">&lt;/h1&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Section 1<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is not <span class="nt">&lt;em&gt;</span>what yo see in sleep<span class="nt">&lt;/em&gt;</span>,<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is the thing which does not <span class="nt">&lt;strong&gt;</span>let you sleep<span class="nt">&lt;/strong&gt;</span>.<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>--<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Anonymous<span class="nt">&lt;/a&gt;&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Three simple steps to succeed<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;ol&gt;</span><br /><span class="nt">&lt;li&gt;</span>Knowledge<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;li&gt;</span>Will<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;li&gt;</span>The Means<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;/ol&gt;</span><br /></pre></div><br /><figcaption><span class="caps">HTML</span></figcaption></figure></div>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>Intro<span class="nt">&lt;/h1&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Section 1<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is not <span class="nt">&lt;em&gt;</span>what you see in sleep<span class="nt">&lt;/em&gt;</span>,<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;&lt;strong&gt;</span>dream<span class="nt">&lt;/strong&gt;</span> is the thing which does not <span class="nt">&lt;strong&gt;</span>let you sleep<span class="nt">&lt;/strong&gt;</span>.<span class="nt">&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;p&gt;</span>--<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Anonymous<span class="nt">&lt;/a&gt;&lt;/p&gt;</span><br />&nbsp;<br /><span class="nt">&lt;h2&gt;</span>Three simple steps to succeed<span class="nt">&lt;/h2&gt;</span><br />&nbsp;<br /><span class="nt">&lt;ol&gt;</span><br /><span class="nt">&lt;li&gt;</span>Knowledge<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;li&gt;</span>Determination<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;li&gt;</span>The Means<span class="nt">&lt;/li&gt;</span><br /><span class="nt">&lt;/ol&gt;</span><br /></pre></div><br /><figcaption><span class="caps">HTML</span></figcaption></figure></div>
 
 <p>You can try it out online <strong><a href="http://daringfireball.net/projects/markdown/dingus">Dingus</a></strong></p>
 <h2><span class="caps">HYDE</span> Syntax Highlighting&nbsp;Plugin</h2>
@@ -200,6 +201,56 @@ Why&nbsp;<span class="caps">HYDE</span></p>
 <p>Full documentation can be found on <a href="http://jinja.pocoo.org/docs/templates/">Jinja2&nbsp;Docs</a></p>
 <p>I found this <em>template</em> engine quite interesting to use. A template allows to express most of the replicated entries in each <span class="caps">HTML</span> page only once, which is often called as <strong>base template</strong> of the whole site, and is automatically applied to all the pages which inherit them, often called as <strong>child template</strong>.</p>
 <h2>Layout</h2>
+<div id="hyde-layout">
+<i class="icon-folder-open" style="color:#99BBD6;font-size:30px;"></i><span style="font-size:20px;"> content</span><br />
+
+<div id="sub-folder">
+<i class="icon-folder-open" style="color:#99BBD6;"></i>blog<br />
+
+<div id="sub-folder">
+<i class="icon-folder-open" style="color:#99BBD6;"></i>tags<br />
+<i class="icon-file" style="color:#444444;"></i>index.yaml<br />
+<i class="icon-file" style="color:#444444;"></i>meta.yaml<br />
+</div>
+
+<i class="icon-folder-open" style="color:#99BBD6;"></i>media<br />
+
+<div id="sub-folder">
+<i class="icon-folder-open" style="color:#99BBD6;"></i>css<br />
+<i class="icon-folder-open" style="color:#99BBD6;"></i>images<br />
+<i class="icon-folder-open" style="color:#99BBD6;"></i>js<br />
+<i class="icon-file" style="color:#444444;"></i>meta.yaml<br />
+</div>
+
+<i class="icon-folder-open" style="color:#99BBD6;"></i>portfolio<br />
+
+<div id="sub-folder">
+<i class="icon-file" style="color:#444444;"></i>index.html<br />
+</div>
+
+<i class="icon-file" style="color:#444444;"></i>about.html<br />
+<i class="icon-file" style="color:#444444;"></i>favocin.ico<br />
+<i class="icon-file" style="color:#444444;"></i>index.html<br />
+</div>
+
+<p><i class="icon-folder-open" style="color:#99BBD6;font-size:30px;"></i> deploy<br />
+<i class="icon-folder-open" style="color:#99BBD6;font-size:30px;"></i> layout<br /></p>
+<div id="sub-folder">
+<i class="icon-file" style="color:#444444;"></i>analytics.j2<br />
+<i class="icon-file" style="color:#444444;"></i>atom.j2<br />
+<i class="icon-file" style="color:#444444;"></i>base.j2<br />
+<i class="icon-file" style="color:#444444;"></i>blog.j2<br />
+<i class="icon-file" style="color:#444444;"></i>devmode.j2<br />
+<i class="icon-file" style="color:#444444;"></i>listing.j2<br />
+<i class="icon-file" style="color:#444444;"></i>macros.j2<br />
+<i class="icon-file" style="color:#444444;"></i>tagged_posts.j2<br />
+</div>
+
+<p><i class="icon-file" style="color:#444444;"></i>info.yaml<br />
+<i class="icon-file" style="color:#444444;"></i><span class="caps">README</span>.markdown<br />
+<i class="icon-file" style="color:#444444;"></i>site.yaml<br /></p>
+</div>
+
 <h2>Content</h2>
 <p>This is the directory where static files such as images, stylsheets and script-files are stored in order to serve the site. This folder is the foundation for providing the structure to the site. <span class="caps">HTML</span> page files starts with the page metadata and then inherit the code (<em>as stored in jinja files with .j2 ext </em>) from the <em>layout</em>&nbsp;directory. </p>
 
@@ -247,7 +298,7 @@ Why&nbsp;<span class="caps">HYDE</span></p>
   <footer>
       
       <div id="social-media-cons">
-            <a href="#" target="_blank"><i class="icon-linkedin icon-2x " title="LinkedIn" ></i></a>
+            <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank"><i class="icon-linkedin icon-2x " title="LinkedIn" ></i></a>
 
             <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="icon-twitter icon-2x " title="Twitter" ></i></a>
 
