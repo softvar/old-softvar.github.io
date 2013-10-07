@@ -41,7 +41,8 @@
   <link rel="stylesheet" href="/media/css/simple-sidebar.css">
   <link rel="stylesheet" href="/media/css/syntax.css">
   <link rel="stylesheet" href="/media/css/jquery.classysocial.css" />
-  
+  <link rel="stylesheet" href="/media/font-awesome/css/font-awesome.min.css" />
+
     <!-- All JavaScript at the bottom, except for Modernizr which
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
@@ -63,7 +64,7 @@
             <ul class="nav nav-pills">
 
               <li><a href="/about.html">About</a></li>
-              <li><a class="active" href="#">Archive</a></li>
+              <li><a class="active" href="/blog">Archive</a></li>
               <li><a href="/portfolio">Projects</a></li>
               <li><a href="#">Walk-through</a></li>
             </ul>
@@ -156,7 +157,56 @@
     </a>
 </li>
 </ul>
-<p>Yay! this is my second approved <span class="caps">FIREFOX</span>-<span class="caps">OS</span>(<span class="caps">FOS</span>) App- <strong>GistHub</strong>. It&#8217;s free to download from <a href="https://marketplace.firefox.com/app/gisthub/">Firefox marketplace</a> for firefox smartphones&nbsp;:)</p>
+<p>Yay! this is my second approved <span class="caps">FIREFOX</span>-<span class="caps">OS</span>(<span class="caps">FOS</span>) App- <strong>GistHub</strong>, after the basic <a href="../07/fOS-intro.html">Calculator</a> app. It&#8217;s an app for firefox smartphones, which helps Github Users to access and manage their Gists instantly without opening the site in browser. It&#8217;s free to download from <a href="https://marketplace.firefox.com/app/gisthub/">Firefox marketplace</a> for firefox smartphones&nbsp;:)</p>
+<h2>Inspiration</h2>
+<p>The inspiration came from my boring travelling times. I urge an need to code while on the way and Gists are the best way to do so. Meanwhile, I was fond of Firefox <span class="caps">OS</span>, going to hit the market in just few months. And there it goes&#8230; <i class="icon-thumbs-up"></i></p>
+<p>I came up with an idea to manage your gists and access other all under one&nbsp;hood.</p>
+<h2>Following things can be efficiently&nbsp;acheived:</h2>
+<p><i class="icon-eye-open icon-border" ></i> View all github-gists<br />
+</p>
+<p><i class="icon-edit icon-border" ></i> Edit a&nbsp;gist</p>
+<p><i class="icon-remove-circle icon-border" style="color:red;" ></i> Delete a particular gist<br />
+</p>
+<p><i class="icon-code icon-border" style="color:pink;" ></i> Create numbers of&nbsp;gists</p>
+<p><i class="icon-search icon-border" style="color:green"></i> Search any github users&#8217; gists<br />
+</p>
+<p><i class="icon-code-fork icon-border" ></i> Fork, Star, Unstar any number of&nbsp;gists </p>
+<h2>User&nbsp;Authentication</h2>
+<p>A User can Login into the app using his Github email-id/username along with the password. The engine used behing the authentication has been carried out using the <a href="https://developer.mozilla.org/en/docs/IndexedDB">IndexedDB <span class="caps">API</span></a>, a client-side storage of significant amounts of structured data and for high performance searches on the data using&nbsp;indexes.</p>
+<p><span style="font-weight:bold;color:black;text-align:center;">Initialize&nbsp;Database</span></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="nx">initializeDB</span><span class="o">:</span><span class="kd">function</span> <span class="nx">initializeDB</span><span class="p">(){</span><br /><span class="kd">var</span> <span class="nx">notes</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span><br /><span class="kd">var</span> <span class="nx">objectStore</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">database</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">&quot;notes&quot;</span><span class="p">).</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;notes&quot;</span><span class="p">);</span><br />&nbsp;<br /><br /><span class="kd">var</span> <span class="nx">objectStore</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">database</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">&quot;notes&quot;</span><span class="p">).</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;notes&quot;</span><span class="p">);</span><br /><span class="nx">objectStore</span><span class="p">.</span><span class="nx">openCursor</span><span class="p">().</span><span class="nx">onsuccess</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span><br />  <span class="kd">var</span> <span class="nx">cursor</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span><br />&nbsp;<br />  <span class="k">if</span> <span class="p">(</span><span class="nx">cursor</span><span class="p">)</span> <span class="p">{</span><br />    <span class="c1">//... Already logged in, do stuff and redirect</span><br />    <span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">&quot;view_gists.html&quot;</span><span class="p">;</span><br />    <span class="nx">cursor</span><span class="p">.</span><span class="k">continue</span><span class="p">();</span><br />  <span class="p">}</span><br />  <br /><span class="p">};</span><br /><span class="p">}</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+<p><span style="font-weight:bold;color:black;text-align:center;">Identification <span class="amp">&amp;</span> Authentication using <span class="caps">AJAX</span>&nbsp;call</span></p>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="c1">// function for saving the credentials after successful logging</span><br /><span class="nx">saveCredentials</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">saveCredentials</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="nx">password</span><span class="p">,</span><span class="nx">UserImage</span><span class="p">,</span><span class="nx">UserLogin</span><span class="p">)</span> <span class="p">{</span><br />    <span class="kd">var</span> <span class="nx">note</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="o">:</span><span class="nx">username</span><span class="p">,</span><span class="s1">&#39;pass&#39;</span><span class="o">:</span><span class="nx">password</span><span class="p">,</span><span class="s1">&#39;image&#39;</span><span class="o">:</span><span class="nx">UserImage</span><span class="p">,</span><span class="s1">&#39;login&#39;</span><span class="o">:</span><span class="nx">UserLogin</span><span class="p">};</span><br />   <br />  <br />  <br /><span class="kd">var</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">database</span><span class="p">.</span><span class="nx">transaction</span><span class="p">([</span><span class="s2">&quot;notes&quot;</span><span class="p">],</span> <span class="s2">&quot;readwrite&quot;</span><span class="p">);</span><br /><span class="kd">var</span> <span class="nx">objectStore</span> <span class="o">=</span> <span class="nx">transaction</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;notes&quot;</span><span class="p">);</span><br /><span class="kd">var</span> <span class="nx">request</span><span class="o">=</span><span class="nx">objectStore</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="nx">note</span><span class="p">);</span><br /><span class="nx">request</span><span class="p">.</span><span class="nx">onsuccess</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span><br />&nbsp;<br />  <span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">&quot;view_gists.html&quot;</span><span class="p">;</span><br /><span class="p">};</span><br /><span class="p">}</span><br />&nbsp;<br /><span class="c1">// function to generate the <span class="caps">BASIC</span> Hash for authentication </span><br /><span class="nx">generateTokenHash</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">generateTokenHash</span><span class="p">(</span><span class="nx">user</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span> <span class="p">{</span><br />  <span class="kd">var</span> <span class="nx">tok</span> <span class="o">=</span> <span class="nx">user</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nx">password</span><span class="p">;</span><br />  <span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">btoa</span><span class="p">(</span><span class="nx">tok</span><span class="p">);</span><br />  <br />  <span class="k">return</span> <span class="s2">&quot;Basic &quot;</span> <span class="o">+</span> <span class="nx">hash</span><span class="p">;</span><br /><span class="p">},</span><br />&nbsp;<br /><span class="c1">// <span class="caps">AJAX</span> call to test authorization</span><br /><span class="nx">loginNauth</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">loginNauth</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="nx">password</span><span class="p">)</span> <span class="p">{</span><br />&nbsp;<br /><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span><br /><span class="nx">obj</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span><br />&nbsp;<br /><br />      <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><br />        <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://api.github.com/user&#39;</span><span class="p">,</span><br />        <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;<span class="caps">GET</span>&#39;</span><span class="p">,</span><br />        <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span><br />        <span class="nx">beforeSend</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">){</span> <br />        <span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s1">&#39;Authorization&#39;</span><span class="p">,</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">generateTokenHash</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="nx">password</span><span class="p">));</span> <br />    <span class="p">}</span><br />      <span class="p">})</span><br />      <span class="p">.</span><span class="nx">success</span><span class="p">(</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span><br />           <br />       <span class="cm">/* successfully logged in, parse the data, </span><br /><span class="cm">         <span class="caps">GET</span> as <span class="caps">JSON</span> Object, and store for future refrences */</span><br />    <br />        <span class="nx">obj</span><span class="p">.</span><span class="nx">saveCredentials</span><span class="p">(</span><span class="nx">UserLogin</span><span class="p">,</span><span class="nx">password</span><span class="p">,</span><span class="nx">UserImage</span><span class="p">,</span><span class="nx">UserLogin</span><span class="p">);</span><br />      <span class="p">})</span><br />      <span class="p">.</span><span class="nx">error</span><span class="p">(</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span><br />      <br />            <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Authentication Failed !&quot;</span><span class="p">);</span><br />     <br />      <span class="p">})</span><br /><span class="p">}</span><br /></pre></div><br /><figcaption>JavaScript</figcaption></figure></div>
+
+<h2>Viewing your Gists <i class="icon-eye-open" style="color:black;"></i></h2>
+<div id="fos-content">
+
+<p>As per the <a href="http://developer.github.com/v3/">Github <span class="caps">API</span> v3</a>, only the recent 30 Gists will be available for viewing. Bootstrap pagination helps in viewing the Gists in pages, each lisitng upto 8&nbsp;Gists.</p>
+<p>A Github User, after logging in, can now view the Description(if present) and the Contents of the Gist and, if required, a Gist can be successfully&nbsp;edited.</p>
+<p></div>
+<img id="fos-image" src="/media/images/VIEWGIST.jpg"></img></p>
+<h2>Creating a new Gist <i class="icon-code " style="color:pink;" ></i></h2>
+<div id="fos-content">
+
+<p>Here it comes the basic idea for having this app. A user can create as many Gists as he wants. Providing Name and Description for a Gist is not mandatory and Github automatically assigns a default name for that. Content for the Gist is necessary and what it should&nbsp;be. </p>
+<p>By default, all the Gists created will be public in nature.
+Once created, the Gist can also be deleted by switching over to Viewing tab and going for the Delete&nbsp;Option.</p>
+<p>You can copy <span class="amp">&amp;</span> paste the contents wherever&nbsp;needed.</p>
+<p></div>
+<img id="fos-image" src="/media/images/CREATEGIST.jpg"></img></p>
+<h2>Searching Gists <span class="amp">&amp;</span> Other Operations <i class="icon-code-fork " style="color:black;" ></i></h2>
+<div id="fos-content">
+
+<p>Most interestingly, you can view the Gists of any Github user by providing his valid username. Again just to remind, only recent 30 Gists will be available for the lisitng as per the <a href="http://developer.github.com/v3/">Github <span class="caps">API</span> v3</a>.</p>
+<p>A User&nbsp;can: </p>
+<p><i class="icon-circle" style="font-size: 15px;color:#45C17D;"></i> View <i class="icon-eye-open icon-border" ></i> the details of the Gist(s) listed. <br /></p>
+<p><i class="icon-circle" style="font-size: 15px;color:#45C17D;"></i> Fork <i class="icon-code-fork icon-border"></i> the desired Gist(s).<br /></p>
+<p><i class="icon-circle" style="font-size: 15px;color:#45C17D;"></i> Star <i class="icon-star icon-border" style="color:#F7B500;"></i> the favourite Gist(s).<br /></p>
+<p><i class="icon-circle" style="font-size: 15px;color:#45C17D;"></i> Unstar <i class="icon-star-empty icon-border" ></i> the Gist(s).<br /></p>
+</div>
+
+<p><img id="fos-image" src="/media/images/SEARCHGIST.jpg"></img></p>
 
 
           <div class="social-me">
@@ -202,7 +252,7 @@
   <footer>
       
       <div id="social-media-cons">
-            <a href="#" target="_blank"><i class="icon-linkedin icon-2x " title="LinkedIn" ></i></a>
+            <a href="http://www.linkedin.com/pub/varun-malhotra/71/a14/131" target="_blank"><i class="icon-linkedin icon-2x " title="LinkedIn" ></i></a>
 
             <a href="http://twitter.com/s0ftvar" target="_blank" ><i class="icon-twitter icon-2x " title="Twitter" ></i></a>
 
