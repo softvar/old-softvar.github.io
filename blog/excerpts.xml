@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2013-10-05T13:47:21Z</updated>
+    <updated>2013-10-07T18:15:38Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
@@ -45,7 +45,7 @@
             
             <content type="html">
                 
-                &lt;p&gt;Yay! this is my second approved &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) App- &lt;strong&gt;GistHub&lt;/strong&gt;. It&amp;#8217;s free to download from &lt;a href=&#34;https://marketplace.firefox.com/app/gisthub/&#34;&gt;Firefox marketplace&lt;/a&gt; for firefox smartphones&amp;nbsp;:)&lt;/p&gt;            </content>
+                &lt;p&gt;Yay! this is my second approved &lt;span class=&#34;caps&#34;&gt;FIREFOX&lt;/span&gt;-&lt;span class=&#34;caps&#34;&gt;OS&lt;/span&gt;(&lt;span class=&#34;caps&#34;&gt;FOS&lt;/span&gt;) App- &lt;strong&gt;GistHub&lt;/strong&gt;, after the basic &lt;a href=&#34;../07/fOS-intro.html&#34;&gt;Calculator&lt;/a&gt; app. It&amp;#8217;s an app for firefox smartphones, which helps Github Users to access and manage their Gists instantly without opening the site in browser. It&amp;#8217;s free to download from &lt;a href=&#34;https://marketplace.firefox.com/app/gisthub/&#34;&gt;Firefox marketplace&lt;/a&gt; for firefox smartphones&amp;nbsp;:)&lt;/p&gt;            </content>
         </entry>
             <entry>
             <title type="html">Hands on FIREFOX-OS Apps(CSP)</title>
@@ -96,6 +96,6 @@
             
             <content type="html">
                 
-                &lt;p&gt;A will for creating a personal website/blog, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&amp;#8217;m glad to discuss my experience with a new open-source technology, smelting this site, &lt;a href=&#34;www.hyde.com&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&lt;/a&gt;. &lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&amp;#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no&amp;nbsp;digg-effect.&lt;/p&gt;            </content>
+                &lt;p&gt;A will for creating a personal portfolio cum blog site, after spending a lot of time researching and experimenting with various frameworks, came to an end with this. I&amp;#8217;m glad to discuss my experience with a new open-source technology, smelting this site, &lt;a href=&#34;www.hyde.com&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&lt;/a&gt;. &lt;span class=&#34;caps&#34;&gt;HYDE&lt;/span&gt;&amp;#8217;s built-in web server + auto-generator provide instant refresh and unlimited flexibility. No database, no slowness, no&amp;nbsp;digg-effect.&lt;/p&gt;            </content>
         </entry>
     </feed>
