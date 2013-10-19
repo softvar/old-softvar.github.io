@@ -6,6 +6,8 @@ HYDE's built-in web server + automatic code-generation provide instant refresh a
 
 No database, no slowness, no digg-effect.
 
+This is a static website using jInja2 templating engine and markdown renderin for Blogs
+
 Main domain- [varunmalhotra.info](varunmalhotra.info)
 
 Auto-Redirection/functional - [softvar.github.io](softvar.github.io)
