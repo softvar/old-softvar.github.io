@@ -395,14 +395,20 @@ footer{position:relative;
 
 .blog_excerpt h3,
 h1.title{
-    font-size: 34px;
     font-weight: bold;
     padding: 12px 0px 2px;
     line-height: 36px;
-    color : #EF4135;
-    border-bottom: 4px solid #424242;
+    padding: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 4px solid #295D9B;
 
     
+}
+h1.title a{
+	color : #000;
+    font-size : 40px;
+
 }
 
 .blog_excerpt h3{
@@ -1040,4 +1046,3 @@ text-decoration: none;
 .highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
 .highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
-
