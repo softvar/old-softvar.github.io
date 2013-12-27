@@ -110,7 +110,7 @@ footer{position:relative;
     text-shadow: 0px 2px 0px #fff;
     height: 10%;
     background: #fff;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     background: black;
     border-top: 0px;
@@ -401,13 +401,13 @@ h1.title{
     padding: 40px;
     margin-bottom: 10px;
     text-align: center;
-    border-bottom: 4px solid #295D9B;
+    color: #333;
+    border-bottom: 4px solid #6D8FE8;
 
     
 }
 h1.title a{
-	color : #000;
-    font-size : 40px;
+	font-size : 40px;
 
 }
 
@@ -456,14 +456,16 @@ section.content{
 
 .listing li p{
     
-    line-height: 20px;
+    line-height: 28px;
     margin-bottom: 12px;
+    margin-top: 20px;
     font-size: 18px;
     color: #3A3A3A;
     font-family: 'Lato', sans-serif;font-family: 'Bitter', serif;
 
 	text-align:justify;
 	text-justify:inter-word;
+
 }
 .listing h6{
     font-size: 32px;
@@ -480,11 +482,14 @@ section.content{
 
 .listing time{
     display:block;
-    border-bottom: 1px solid #aaaaaa;border-bottom: 2px solid #424242;
+    border-bottom: 2px solid #EBF2F6;
     padding-bottom: 4px;
     font-size: 14px;
+    margin-top: 20px;
     color: #484848;
     color: #747C78;
+    color: #9EABB3;
+    font-size: 17px;
 }
 
 /* blog */
@@ -616,6 +621,10 @@ article.post img{
     color: #FF5151;
     font-size: 15px;
 }
+.read_more a:hover{
+	color: red;
+	text-decoration: none;
+}
 
 .post time{
     font-size: 12px;
@@ -664,14 +673,19 @@ h1 a, h2 a, h3 a{
     padding: -12px;
     
 }
+h3 a{
+	font-size:36px;
+	text-align: center;
+}
 h1.title a:hover{
-    color: #33B773;
+    color: #57A3E8;
     text-decoration: none;
+    transition: all 0.5s ease 0.15s;
 
 }
 
 .owner {
-  width: 70%;
+  width: 60%;
   height: 100px;
   text-align: center;
   margin: 0 auto;
@@ -681,13 +695,12 @@ h1.title a:hover{
 .owner a{
     font-size: 60px;
     font-family: sans-serif, helvetica, Arial;
-    color: #fff;
+    color: #C0C0C0;
 
 }
 .owner a:hover {
-    color: #ed5e6f;
-    
-    color: #C0C0C0;
+    transition: all 0.5s ease 0.15s;
+    color: #fff;
     text-decoration: none;
 }
 h2 {
@@ -706,10 +719,13 @@ h2 {
 }
 h3{
     font-weight: normal;
+
 }
 h3 a:hover{
-    color:#3188D8;color: #33B773;
+    color: #33B773;color: #57A3E8;
     text-decoration: none;
+    font-size:36px;
+    transition: all 0.5s ease 0.15s;
 }
 nav.post_nav{
     background: #F8F8F8;
