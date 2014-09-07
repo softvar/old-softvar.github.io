@@ -6,6 +6,4 @@ HYDE's built-in web server + automatic code-generation provide instant refresh a
 
 No database, no slowness, no digg-effect.
 
-Main domain- [varunmalhotra.info](varunmalhotra.info)
-
-Auto-Redirection/functional - [softvar.github.io](softvar.github.io)
+**Site: ** - [softvar.github.io](softvar.github.io)
